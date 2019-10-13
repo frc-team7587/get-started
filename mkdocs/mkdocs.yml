@@ -1,4 +1,8 @@
 site_name: Getting Started
 nav:
-    - Home: index.md
+    - Knowledge Prep: index.md
+    - Environment Setup: env-setup.md
+    - Basic Code Structure: code-struct.md
+    - roboRIO Setup: rio-setup.md
+    - Your First Robot: robot1.md
 theme: readthedocs

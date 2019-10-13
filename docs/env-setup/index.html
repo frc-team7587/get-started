@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Environment Setup - Getting Started</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Environment Setup";
+    var mkdocs_page_input_path = "env-setup.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Getting Started</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Knowledge Prep</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">Environment Setup</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#environment-setup">Environment Setup</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#frc-update-suite-by-ni-national-instruments">FRC Update Suite by NI (National Instruments)</a></li>
+        
+            <li><a class="toctree-l3" href="#frc-development-tools-by-wpi">FRC Development Tools by WPI</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../code-struct/">Basic Code Structure</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../rio-setup/">roboRIO Setup</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../robot1/">Your First Robot</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Getting Started</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Environment Setup</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="environment-setup">Environment Setup</h1>
+<p>A set of software components must be installed on the laptop, which is to be the Driver Station of your robot. Make sure you have a stable and decent Internet connection.</p>
+<h2 id="frc-update-suite-by-ni-national-instruments">FRC Update Suite by NI (<a href="http://www.ni.com">National Instruments</a>)</h2>
+<p>NI software provides the Driver Station and tools for imaging the roboRIO, which is the brain that operates the robot. Instead of repeating the instruction, following below WPI instruction to download and install the suite.</p>
+<ol>
+<li>Go to http://www.ni.com/download/first-robotics-software-2017/7904/en/, and click the link <strong>FRCUpdateSuite_2019.2.0.zip</strong>.</li>
+<li>You'll be prompted to log in, create an account if needed.</li>
+<li>After downloaded, unzip the zip file to a local folder, go into the folder and double-click <strong>setup.exe</strong> to start installation.</li>
+</ol>
+<p>On most of the installation wizard screens you click "Next" to move along. Pay attention to a few screens below:</p>
+<p><img alt="WPILib Installer Icons" src="../img/ni3.JPG" /></p>
+<p>Enter Team7587's license activation code <strong>B04P65237</strong> on this window:</p>
+<p><img alt="WPILib Installer Icons" src="../img/ni4.JPG" /></p>
+<p>Ensure to accept 2 license agreements:</p>
+<p><img alt="WPILib Installer Icons" src="../img/ni5.JPG" /></p>
+<p><img alt="WPILib Installer Icons" src="../img/ni6.JPG" /></p>
+<p>Note the warning on Windows firewall, and make sure you pick "Allow Access" whenever prompted:</p>
+<p><img alt="WPILib Installer Icons" src="../img/ni8.JPG" /></p>
+<p><strong>IMPORTANT:</strong> Make sure you tick the checkbox to run license manager at the end of installation:</p>
+<p><img alt="WPILib Installer Icons" src="../img/ni9.JPG" /></p>
+<p>When license manager starts, if you already logged in on the ni.com site, it's most likely that the serial number you entered above is already populated; if not, just enter it again, then click the 'Activate' button:</p>
+<p><img alt="WPILib Installer Icons" src="../img/ni11.JPG" /></p>
+<p>After activating the license, restart the laptop as prompted. After reboot, you should see below three tools on your desktop:</p>
+<ul>
+<li>Driver Station</li>
+<li>FRC Dashboard</li>
+<li>roboRIO Imaging Tool</li>
+</ul>
+<p><img alt="WPILib Installer Icons" src="../img/dsinstall.PNG" /></p>
+<h3 id="driver-station">Driver Station</h3>
+<p>The Driver Station (DS) is a critical part of your robot software. It is the user interface on your laptop that enables you to communicate with the robot, and <strong>drive</strong> it. Now you should launch the DS and inspect its various components.</p>
+<p>By default, DS launches itself plus the default Dashboard:</p>
+<p><img alt="Driver Station" src="../img/ds.PNG" /></p>
+<p>Read the article <a href="https://wpilib.screenstepslive.com/s/currentCS/m/driver_station/c/86704">FRC Driver Station</a> as you move along.</p>
+<pre><code>Tip: Connect your joystick and game pad to the laptop and see if DS detects them.
+</code></pre>
+
+<h2 id="frc-development-tools-by-wpi">FRC Development Tools by WPI</h2>
+<p>In 2019 WPI deprecated Eclipse and started pushing <strong>Visual Studio Code</strong> (a light-weight development tool by <a href="https://code.visualstudio.com/">Microsoft</a>) as the new standard IDE. A single "one-stop-shop" installer replaces previous multi-step manual process, and takes care of all the software pieces needed for programming.</p>
+<blockquote>
+<p><strong>Note:</strong> The WPI package installer contains a specific JDK version (v11), do not use any JDK outside of the installed package.</p>
+</blockquote>
+<ol>
+<li>Go to <a href="https://github.com/wpilibsuite/allwpilib/releases">https://github.com/wpilibsuite/allwpilib/releases</a> to download the latest version; at this point it's either <strong>WPILibInstaller_Windows64-2019.4.1.zip</strong> (for 64-bit Windows) or <strong>WPILibInstaller_Windows32-2019.4.1.zip</strong> (for 32-bit Windows). The file is close to 1 GB, it will take some time. Save the downloaded file to a local folder.</li>
+</ol>
+<blockquote>
+<p>To determine your Windows version, go to <strong>Control Panel</strong> and open <strong>System</strong>, look for "System type" field.</p>
+</blockquote>
+<ol>
+<li>
+<p>The downloaded zip file contains only a single file with same name but .exe file extension, extract it to a the same folder, double-click it to start the installation. To extract the file, right-click it and choose 'Extract All'.</p>
+</li>
+<li>
+<p>The installer will initially have the two checkboxes "Visual Studio Code" and "Visual Studio Code Extensions" disabled (see below). You need to click "Select/Download VS Code" button to download it first. The downloaded file is <strong>OfflineVsCodeFiles-1.3x.1.zip</strong> and will be placed in the same folder as the installer. Leave it there and don't open it.</p>
+</li>
+</ol>
+<p><img alt="WPILib Installer VSCode" src="https://raw.githubusercontent.com/team7587/FRC2019/master/resources/img/wpilib-install-vscode.PNG" /></p>
+<ol>
+<li>Back on WPILib Installer, check the two "Visual Studio Code..." checkboxes, and click "Execute Install" to start the full installation process. After a while you'll get a prompt confirming the installation is completed, and see below 3 icons placed on the desktop.</li>
+</ol>
+<p><img alt="WPILib Installer Done" src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/002/027/165/original/908ac47e-8564-4119-988c-39fb30fe7389.png" /></p>
+<p><img alt="WPILib Installer Icons" src="https://raw.githubusercontent.com/team7587/FRC2019/master/resources/img/wpilib-install-done.PNG" /></p>
+<ol>
+<li>Double-click the icon "FRC VS Code 2019" to launch the IDE, type <strong>Ctrl+Shift+P</strong>. A command pallet shows up on the top, type in "WPILIb" and you should see a list of WPILib commands show up. This confirms that the installation is successful.</li>
+</ol>
+<p><img alt="WPILib Installer Icons" src="https://raw.githubusercontent.com/team7587/FRC2019/master/resources/img/vscode-wpilib-cmdpalet.png" /></p>
+<blockquote>
+<p><strong>Note:</strong> The installation places all the files in the folder <strong>C:\Users\Public\frc2019</strong>, this way all users on the laptop can access them.</p>
+</blockquote>
+<h3 id="3-phoenix-framework-by-ctre-cross-the-road-electronics">3. Phoenix Framework by CTRE (<a href="http://www.ctr-electronics.com/">Cross The Road Electronics</a>)</h3>
+<p>In order to use the <strong>Talon SRX</strong> motor controller, the <strong>Phoenix Software Package</strong> from its manufacturer CTRE is required. Installation is straightforward:
+1. Visit http://www.ctr-electronics.com/hro.html#product_tabs_technical_resources
+2. Click the link <strong>CTRE Phoenix Framework Installer 5.15.0.1 (.zip)</strong> to download the zip package
+3. The zip file contains a single file with same name but .exe extension, extract it out to local folder
+4. Double-click it to start the installation (it will require admin rights)
+5. If you see below alert window, click 'Install' to continue:</p>
+<p><img alt="WPILib Installer Icons" src="../img/ctre-alert.PNG" /></p>
+<p>After installation completes, the Phoenix Tuner icon shows up on your desktop:</p>
+<p><img alt="WPILib Installer Icons" src="../img/phoniex1.PNG" /></p>
+<p>Launch the tuner and it would look like this:</p>
+<p><img alt="WPILib Installer Icons" src="https://raw.githubusercontent.com/team7587/Knowledge-Base/master/media/img/phoenix-tuner.PNG" /></p>
+<blockquote>
+<p>More information on Phoenix Software can be found <a href="https://phoenix-documentation.readthedocs.io/en/latest/ch03_PrimerPhoenixSoft.html#what-is-phoenix-tuner">here</a>.
+</p>
+</blockquote>
+<p>Now that your environment is up, let's move on to take a closer look at the basics of robot programming.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../code-struct/" class="btn btn-neutral float-right" title="Basic Code Structure">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href=".." class="btn btn-neutral" title="Knowledge Prep"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../code-struct/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>
