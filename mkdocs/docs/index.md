@@ -53,38 +53,44 @@ NI software provides the Driver Station and tools for imaging the roboRIO, which
 
 On most of the installation wizard screens you click "Next" to move along. Pay attention to a few screens below:
 
-![WPILib Installer Icons](https://raw.githubusercontent.com/team7587/Knowledge-Base/master/resources/img/ni3.JPG)
+![WPILib Installer Icons](img/ni3.JPG)
 
 Enter Team7587's license activation code **B04P65237** on this window:
 
-![WPILib Installer Icons](https://raw.githubusercontent.com/team7587/Knowledge-Base/master/resources/img/ni4.JPG)
+![WPILib Installer Icons](img/ni4.JPG)
 
 Ensure to accept 2 license agreements:
 
-![WPILib Installer Icons](https://raw.githubusercontent.com/team7587/Knowledge-Base/master/resources/img/ni5.JPG)
+![WPILib Installer Icons](img/ni5.JPG)
 
-![WPILib Installer Icons](https://raw.githubusercontent.com/team7587/Knowledge-Base/master/resources/img/ni6.JPG)
+![WPILib Installer Icons](img/ni6.JPG)
 
 Note the warning on Windows firewall, and make sure you pick "Allow Access" whenever prompted:
 
-![WPILib Installer Icons](https://raw.githubusercontent.com/team7587/Knowledge-Base/master/resources/img/ni8.JPG)
+![WPILib Installer Icons](img/ni8.JPG)
 
 **IMPORTANT:** Make sure you tick the checkbox to run license manager at the end of installation:
 
-![WPILib Installer Icons](https://raw.githubusercontent.com/team7587/Knowledge-Base/master/resources/img/ni9.JPG)
+![WPILib Installer Icons](img/ni9.JPG)
 
 When license manager starts, if you already logged in on the ni.com site, it's most likely that the serial number you entered above is already populated; if not, just enter it again, then click the 'Activate' button:
 
-![WPILib Installer Icons](https://raw.githubusercontent.com/team7587/Knowledge-Base/master/resources/img/ni11.JPG)
+![WPILib Installer Icons](img/ni11.JPG)
 
-After activating the license, restart the laptop as prompted. After reboot, you should see two icons below on your desktop:
+After activating the license, restart the laptop as prompted. After reboot, you should see below three tools on your desktop:
 
-![WPILib Installer Icons](https://raw.githubusercontent.com/team7587/Knowledge-Base/master/resources/img/ni14.JPG)
+* Driver Station
+* FRC Dashboard
+* roboRIO Imaging Tool
 
-That indicates the NI software has been installed successfully.
+![WPILib Installer Icons](img/dsinstall.PNG)
 
 ### Driver Station
 The Driver Station (DS) is a critical part of your robot software. It is the user interface on your laptop that enables you to communicate with the robot, and **drive** it. Now you should launch the DS and inspect its various components.
+
+By default, DS launches itself plus the default Dashboard:
+
+![Driver Station](img/ds.PNG)
 
 Read the article [FRC Driver Station](https://wpilib.screenstepslive.com/s/currentCS/m/driver_station/c/86704) as you move along.
 
@@ -126,11 +132,11 @@ In order to use the **Talon SRX** motor controller, the **Phoenix Software Packa
 4. Double-click it to start the installation (it will require admin rights)
 5. If you see below alert window, click 'Install' to continue:
 
-![WPILib Installer Icons](https://raw.githubusercontent.com/team7587/Knowledge-Base/master/resources/img/ctre-alert.PNG)
+![WPILib Installer Icons](img/ctre-alert.PNG)
 
 After installation completes, the Phoenix Tuner icon shows up on your desktop:
 
-![WPILib Installer Icons](https://raw.githubusercontent.com/team7587/Knowledge-Base/master/resources/img/phoniex1.PNG)
+![WPILib Installer Icons](img/phoniex1.PNG)
 
 Launch the tuner and it would look like this:
 
