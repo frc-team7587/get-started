@@ -68,7 +68,7 @@ In 2019 WPI deprecated Eclipse and started pushing **Visual Studio Code** (a lig
 
 - The installer will initially have the two checkboxes "*Visual Studio Code*" and "*Visual Studio Code Extensions*" disabled (see below). You need to click "**Select/Download VS Code**" to download it first. The downloaded file is **OfflineVsCodeFiles-1.3x.1.zip** and will be placed in the same folder as the installer. Leave it there and don't open it.
 
-![WPILib Installer VSCode](img/wpilib-install-start.png)
+![WPILib Installer VSCode](img/wpilib-install-start.PNG)
 
 - Back on WPILib Installer, check the two "*Visual Studio Code...*" checkboxes, and click "*Execute Install*" to start the full installation. After a while you'll get a prompt confirming the installation is completed, and see below three icons placed on the desktop.
 
