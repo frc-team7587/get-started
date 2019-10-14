@@ -122,7 +122,7 @@
                 <h1 id="environment-setup">Environment Setup</h1>
 <p>A set of software components must be installed on the laptop, which is to be the Driver Station of your robot. Make sure you have a stable and decent Internet connection.</p>
 <h2 id="frc-update-suite-by-ni-national-instruments">FRC Update Suite by NI (<a href="http://www.ni.com">National Instruments</a>)</h2>
-<p>NI software provides the Driver Station and tools for imaging the roboRIO, which is the brain that operates the robot. Instead of repeating the instruction, following below WPI instruction to download and install the suite.</p>
+<p>National Instruments provides the Driver Station and tools for imaging the roboRIO. Installation is straighforward but you'll need to log onto <ni.com> and provide license serial number.</p>
 <ol>
 <li>Go to http://www.ni.com/download/first-robotics-software-2017/7904/en/, and click the link <strong>FRCUpdateSuite_2019.2.0.zip</strong>.</li>
 <li>You'll be prompted to log in, create an account if needed.</li>
@@ -157,36 +157,36 @@
 </code></pre>
 
 <h2 id="frc-development-tools-by-wpi">FRC Development Tools by WPI</h2>
-<p>In 2019 WPI deprecated Eclipse and started pushing <strong>Visual Studio Code</strong> (a light-weight development tool by <a href="https://code.visualstudio.com/">Microsoft</a>) as the new standard IDE. A single "one-stop-shop" installer replaces previous multi-step manual process, and takes care of all the software pieces needed for programming.</p>
+<p>In 2019 WPI deprecated Eclipse and started pushing <strong>Visual Studio Code</strong> (a light-weight development tool by <a href="https://code.visualstudio.com/">Microsoft</a>) as the new standard IDE.</p>
 <blockquote>
 <p><strong>Note:</strong> The WPI package installer contains a specific JDK version (v11), do not use any JDK outside of the installed package.</p>
 </blockquote>
-<ol>
-<li>Go to <a href="https://github.com/wpilibsuite/allwpilib/releases">https://github.com/wpilibsuite/allwpilib/releases</a> to download the latest version; at this point it's either <strong>WPILibInstaller_Windows64-2019.4.1.zip</strong> (for 64-bit Windows) or <strong>WPILibInstaller_Windows32-2019.4.1.zip</strong> (for 32-bit Windows). The file is close to 1 GB, it will take some time. Save the downloaded file to a local folder.</li>
-</ol>
+<ul>
+<li>Go to <a href="https://github.com/wpilibsuite/allwpilib/releases">https://github.com/wpilibsuite/allwpilib/releases</a> and download the latest version; at this point it's either <strong>WPILibInstaller_Windows64-2019.4.1.zip</strong> (for 64-bit Windows) or <strong>WPILibInstaller_Windows32-2019.4.1.zip</strong> (for 32-bit Windows). The file is over 1 GB, it will take some time.</li>
+</ul>
 <blockquote>
-<p>To determine your Windows version, go to <strong>Control Panel</strong> and open <strong>System</strong>, look for "System type" field.</p>
+<p><strong>Note:</strong> To determine your Windows version, go to <strong>Control Panel</strong> and open <strong>System</strong>, look for "System type" field.</p>
 </blockquote>
-<ol>
+<ul>
 <li>
-<p>The downloaded zip file contains only a single file with same name but .exe file extension, extract it to a the same folder, double-click it to start the installation. To extract the file, right-click it and choose 'Extract All'.</p>
+<p>Extract the .exe file in the zip and double-click it to start the installation.</p>
 </li>
 <li>
-<p>The installer will initially have the two checkboxes "Visual Studio Code" and "Visual Studio Code Extensions" disabled (see below). You need to click "Select/Download VS Code" button to download it first. The downloaded file is <strong>OfflineVsCodeFiles-1.3x.1.zip</strong> and will be placed in the same folder as the installer. Leave it there and don't open it.</p>
+<p>The installer will initially have the two checkboxes "<em>Visual Studio Code</em>" and "<em>Visual Studio Code Extensions</em>" disabled (see below). You need to click "<strong>Select/Download VS Code</strong>" to download it first. The downloaded file is <strong>OfflineVsCodeFiles-1.3x.1.zip</strong> and will be placed in the same folder as the installer. Leave it there and don't open it.</p>
 </li>
-</ol>
-<p><img alt="WPILib Installer VSCode" src="https://raw.githubusercontent.com/team7587/FRC2019/master/resources/img/wpilib-install-vscode.PNG" /></p>
-<ol>
-<li>Back on WPILib Installer, check the two "Visual Studio Code..." checkboxes, and click "Execute Install" to start the full installation process. After a while you'll get a prompt confirming the installation is completed, and see below 3 icons placed on the desktop.</li>
-</ol>
-<p><img alt="WPILib Installer Done" src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/002/027/165/original/908ac47e-8564-4119-988c-39fb30fe7389.png" /></p>
-<p><img alt="WPILib Installer Icons" src="https://raw.githubusercontent.com/team7587/FRC2019/master/resources/img/wpilib-install-done.PNG" /></p>
-<ol>
-<li>Double-click the icon "FRC VS Code 2019" to launch the IDE, type <strong>Ctrl+Shift+P</strong>. A command pallet shows up on the top, type in "WPILIb" and you should see a list of WPILib commands show up. This confirms that the installation is successful.</li>
-</ol>
-<p><img alt="WPILib Installer Icons" src="https://raw.githubusercontent.com/team7587/FRC2019/master/resources/img/vscode-wpilib-cmdpalet.png" /></p>
+</ul>
+<p><img alt="WPILib Installer VSCode" src="../img/wpilib-install-start.png" /></p>
+<ul>
+<li>Back on WPILib Installer, check the two "<em>Visual Studio Code...</em>" checkboxes, and click "<em>Execute Install</em>" to start the full installation. After a while you'll get a prompt confirming the installation is completed, and see below three icons placed on the desktop.</li>
+</ul>
+<p><img alt="WPILib Installer Done" src="../img/wpilib-install-finish.PNG" /></p>
+<p><img alt="WPILib Installer Icons" src="../img/wpilib-install-done.PNG" /></p>
+<ul>
+<li>Double-click the icon "<strong>FRC VS Code 2019</strong>" to launch the IDE, type <strong><em>Ctrl+Shift+P</em></strong>. A command pallet shows up on the top, type in "<em>WPILIb</em>" and you should see a list of WPILib commands show up.</li>
+</ul>
+<p><img alt="WPILib Installer Icons" src="../img/vscode-wpilib-cmdpalet.png" /></p>
 <blockquote>
-<p><strong>Note:</strong> The installation places all the files in the folder <strong>C:\Users\Public\frc2019</strong>, this way all users on the laptop can access them.</p>
+<p><strong>Note:</strong> The installer places all the files in the folder <strong>C:\Users\Public\frc2019</strong>, this way all users on the laptop can access them.</p>
 </blockquote>
 <h3 id="3-phoenix-framework-by-ctre-cross-the-road-electronics">3. Phoenix Framework by CTRE (<a href="http://www.ctr-electronics.com/">Cross The Road Electronics</a>)</h3>
 <p>In order to use the <strong>Talon SRX</strong> motor controller, the <strong>Phoenix Software Package</strong> from its manufacturer CTRE is required. Installation is straightforward:
@@ -199,7 +199,7 @@
 <p>After installation completes, the Phoenix Tuner icon shows up on your desktop:</p>
 <p><img alt="WPILib Installer Icons" src="../img/phoniex1.PNG" /></p>
 <p>Launch the tuner and it would look like this:</p>
-<p><img alt="WPILib Installer Icons" src="https://raw.githubusercontent.com/team7587/Knowledge-Base/master/media/img/phoenix-tuner.PNG" /></p>
+<p><img alt="WPILib Installer Icons" src="../img/phoenix-tuner.PNG" /></p>
 <blockquote>
 <p>More information on Phoenix Software can be found <a href="https://phoenix-documentation.readthedocs.io/en/latest/ch03_PrimerPhoenixSoft.html#what-is-phoenix-tuner">here</a>.
 </p>

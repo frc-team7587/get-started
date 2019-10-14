@@ -2,7 +2,7 @@
 A set of software components must be installed on the laptop, which is to be the Driver Station of your robot. Make sure you have a stable and decent Internet connection.
 
 ## FRC Update Suite by NI ([National Instruments](http://www.ni.com))
-NI software provides the Driver Station and tools for imaging the roboRIO, which is the brain that operates the robot. Instead of repeating the instruction, following below WPI instruction to download and install the suite.
+National Instruments provides the Driver Station and tools for imaging the roboRIO. Installation is straighforward but you'll need to log onto <ni.com> and provide license serial number.
 
 1. Go to http://www.ni.com/download/first-robotics-software-2017/7904/en/, and click the link **FRCUpdateSuite_2019.2.0.zip**.
 2. You'll be prompted to log in, create an account if needed.
@@ -56,30 +56,31 @@ Tip: Connect your joystick and game pad to the laptop and see if DS detects them
 ~~~  
 
 ## FRC Development Tools by WPI
-In 2019 WPI deprecated Eclipse and started pushing **Visual Studio Code** (a light-weight development tool by [Microsoft](https://code.visualstudio.com/)) as the new standard IDE. A single "one-stop-shop" installer replaces previous multi-step manual process, and takes care of all the software pieces needed for programming.
+In 2019 WPI deprecated Eclipse and started pushing **Visual Studio Code** (a light-weight development tool by [Microsoft](https://code.visualstudio.com/)) as the new standard IDE.
+
 >**Note:** The WPI package installer contains a specific JDK version (v11), do not use any JDK outside of the installed package.
 
-1. Go to [https://github.com/wpilibsuite/allwpilib/releases](https://github.com/wpilibsuite/allwpilib/releases) to download the latest version; at this point it's either **WPILibInstaller_Windows64-2019.4.1.zip** (for 64-bit Windows) or **WPILibInstaller_Windows32-2019.4.1.zip** (for 32-bit Windows). The file is close to 1 GB, it will take some time. Save the downloaded file to a local folder.
+- Go to [https://github.com/wpilibsuite/allwpilib/releases](https://github.com/wpilibsuite/allwpilib/releases) and download the latest version; at this point it's either **WPILibInstaller_Windows64-2019.4.1.zip** (for 64-bit Windows) or **WPILibInstaller_Windows32-2019.4.1.zip** (for 32-bit Windows). The file is over 1 GB, it will take some time.
 
->To determine your Windows version, go to **Control Panel** and open **System**, look for "System type" field.
+>**Note:** To determine your Windows version, go to **Control Panel** and open **System**, look for "System type" field.
 
-2. The downloaded zip file contains only a single file with same name but .exe file extension, extract it to a the same folder, double-click it to start the installation. To extract the file, right-click it and choose 'Extract All'.
+- Extract the .exe file in the zip and double-click it to start the installation.
 
-3. The installer will initially have the two checkboxes "Visual Studio Code" and "Visual Studio Code Extensions" disabled (see below). You need to click "Select/Download VS Code" button to download it first. The downloaded file is **OfflineVsCodeFiles-1.3x.1.zip** and will be placed in the same folder as the installer. Leave it there and don't open it.
+- The installer will initially have the two checkboxes "*Visual Studio Code*" and "*Visual Studio Code Extensions*" disabled (see below). You need to click "**Select/Download VS Code**" to download it first. The downloaded file is **OfflineVsCodeFiles-1.3x.1.zip** and will be placed in the same folder as the installer. Leave it there and don't open it.
 
-![WPILib Installer VSCode](https://raw.githubusercontent.com/team7587/FRC2019/master/resources/img/wpilib-install-vscode.PNG)
+![WPILib Installer VSCode](img/wpilib-install-start.png)
 
-4. Back on WPILib Installer, check the two "Visual Studio Code..." checkboxes, and click "Execute Install" to start the full installation process. After a while you'll get a prompt confirming the installation is completed, and see below 3 icons placed on the desktop.
+- Back on WPILib Installer, check the two "*Visual Studio Code...*" checkboxes, and click "*Execute Install*" to start the full installation. After a while you'll get a prompt confirming the installation is completed, and see below three icons placed on the desktop.
 
-![WPILib Installer Done](https://s3.amazonaws.com/screensteps_live/image_assets/assets/002/027/165/original/908ac47e-8564-4119-988c-39fb30fe7389.png)
+![WPILib Installer Done](img/wpilib-install-finish.PNG)
 
-![WPILib Installer Icons](https://raw.githubusercontent.com/team7587/FRC2019/master/resources/img/wpilib-install-done.PNG)
+![WPILib Installer Icons](img/wpilib-install-done.PNG)
 
-5. Double-click the icon "FRC VS Code 2019" to launch the IDE, type **Ctrl+Shift+P**. A command pallet shows up on the top, type in "WPILIb" and you should see a list of WPILib commands show up. This confirms that the installation is successful.
+- Double-click the icon "**FRC VS Code 2019**" to launch the IDE, type ***Ctrl+Shift+P***. A command pallet shows up on the top, type in "*WPILIb*" and you should see a list of WPILib commands show up.
 
-![WPILib Installer Icons](https://raw.githubusercontent.com/team7587/FRC2019/master/resources/img/vscode-wpilib-cmdpalet.png)
+![WPILib Installer Icons](img/vscode-wpilib-cmdpalet.png)
 
->**Note:** The installation places all the files in the folder **C:\Users\Public\frc2019**, this way all users on the laptop can access them.
+>**Note:** The installer places all the files in the folder **C:\Users\Public\frc2019**, this way all users on the laptop can access them.
 
 ### 3. Phoenix Framework by CTRE ([Cross The Road Electronics](http://www.ctr-electronics.com/))
 In order to use the **Talon SRX** motor controller, the **Phoenix Software Package** from its manufacturer CTRE is required. Installation is straightforward:
@@ -97,7 +98,7 @@ After installation completes, the Phoenix Tuner icon shows up on your desktop:
 
 Launch the tuner and it would look like this:
 
-![WPILib Installer Icons](https://raw.githubusercontent.com/team7587/Knowledge-Base/master/media/img/phoenix-tuner.PNG)
+![WPILib Installer Icons](img/phoenix-tuner.PNG)
 
 > More information on Phoenix Software can be found [here](https://phoenix-documentation.readthedocs.io/en/latest/ch03_PrimerPhoenixSoft.html#what-is-phoenix-tuner).
 >
