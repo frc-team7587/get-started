@@ -15,7 +15,3 @@ During imaging process the Windows firewall should be turned off. We recommend y
 In case you are prompted with following alert, simply click **Allow Access** to proceed.
 
 ![Windows Firewall Alert](img/win-firewall.PNG)
-
-### Verify Driver Station Connectivity
-
-(coming soon...)

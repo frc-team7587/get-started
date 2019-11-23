@@ -4,7 +4,7 @@ A set of software components must be installed on the laptop, which is to be the
 ## FRC Update Suite by NI ([National Instruments](http://www.ni.com))
 National Instruments provides the Driver Station and tools for imaging the roboRIO. Installation is straighforward but you'll need to log onto <ni.com> and provide license serial number.
 
-1. Go to http://www.ni.com/download/first-robotics-software-2017/7904/en/, and click the link **FRCUpdateSuite_2019.2.0.zip**.
+1. Go to [http://www.ni.com/download/first-robotics-software-2017/7904/en/](http://www.ni.com/download/first-robotics-software-2017/7904/en/), and click the link **FRCUpdateSuite_2019.2.0.zip**.
 2. You'll be prompted to log in, create an account if needed.
 3. After downloaded, unzip the zip file to a local folder, go into the folder and double-click **setup.exe** to start installation.
 
