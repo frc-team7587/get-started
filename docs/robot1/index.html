@@ -60,11 +60,6 @@
           
             <li class="toctree-l1">
 		
-    <a class="" href="../code-struct/">Basic Code Structure</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
     <a class="" href="../rio-setup/">roboRIO Setup</a>
 	    </li>
           
@@ -73,9 +68,11 @@
     <a class="current" href="./">Your First Robot</a>
     <ul class="subnav">
             
-    <li class="toctree-l2"><a href="#your-first-robot">Your First Robot</a></li>
+    <li class="toctree-l2"><a href="#your-first-robot-program">Your First Robot Program</a></li>
     
         <ul>
+        
+            <li><a class="toctree-l3" href="#driver-station-connectivity">Driver Station Connectivity</a></li>
         
             <li><a class="toctree-l3" href="#create-project-in-vscode">Create Project in VSCode</a></li>
         
@@ -87,6 +84,11 @@
     
 
     </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../code-struct/">Robot Coding Basics</a>
 	    </li>
           
         </ul>
@@ -121,20 +123,46 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="your-first-robot">Your First Robot</h1>
-<p>(coming soon...)</p>
-<h3 id="create-project-in-vscode">Create Project in VSCode</h3>
-<p>(coming soon...)</p>
-<h3 id="deploy-to-roborio">Deploy to roboRIO</h3>
-<p>(coming soon...)</p>
-<h3 id="go-robot">Go Robot!</h3>
-<p>(coming soon...)</p>
+                <h1 id="your-first-robot-program">Your First Robot Program</h1>
+<p>Now that you have set up your development environment, it's time to try connecting your laptop to the roboRIO, and create your first (test) robot program!</p>
+<h2 id="driver-station-connectivity">Driver Station Connectivity</h2>
+<p>At minimum, you'll need to connect the following components on the robot electrical board:</p>
+<p><strong>Battery -&gt; Power breaker -&gt; PDP -&gt; RoboRIO</strong></p>
+<p>Now connect your laptop to the roboRio using USB or Ethernet cable, and launch the Driver Station. You should see below on the Driver Station interface:</p>
+<p><img alt="DS power on" src="../img/powerandcan.PNG" /></p>
+<p>Note the three fields underneath the battery idcon are green. If you don't have robot code pushed yet, or no joystick connected to the laptop, those fields would be red.</p>
+<p>Here's the screenshot showing joystick connected:</p>
+<p><img alt="DS joystick connection" src="../img/usbdevices.PNG" /></p>
+<p>Click the diagnostics button on the DS panel, you expect to see either "Enet Link" (via Ethernet cable) or "Robot Radio" (via Wifi) in green, depending on the way the laptop is connected to the roboRIO:</p>
+<p><img alt="DS connection" src="../img/diagnosticstab.PNG" /></p>
+<blockquote>
+<p><strong>Note:</strong> You need to enter Team number on DS matching the number entered when you image the roboRIO using NI Imaging Tool.</p>
+</blockquote>
+<p><img alt="DS setup team" src="../img/ds-setup.png" /></p>
+<h2 id="create-project-in-vscode">Create Project in VSCode</h2>
+<p>The new <a href="https://docs.wpilib.org/en/latest">frc-doc</a> site has a great guide to create a benchtop test program. Do follow the steps there to learn how to create the Java project in VS Code:</p>
+<p><strong><a href="https://docs.wpilib.org/en/latest/docs/getting-started/running-a-benchtop/creating-benchtop-test-program-cpp-java.html">Create BenchTop Test Program</a></strong></p>
+<h2 id="deploy-to-roborio">Deploy to roboRIO</h2>
+<p>After completing the new project wizard decribed above, you will see VS Code setting up gradle build for the first time, which may take a bit of time:</p>
+<p><img alt="VS start" src="../img/vsc-start1.png" /></p>
+<p>At the end you should see the message "BUILD SUCCESSFUL" on the VS Code terminal window:</p>
+<p><img alt="VS start build success" src="../img/vsc-start2.PNG" /></p>
+<p>The project is ready to be worked on now. </p>
+<p>For the purpose of running the test program, you don't need to make any change, just right-click the <strong>build.gradle</strong> file in the projet navigation panel, then choose "Build Robot Code" to build the project:</p>
+<p><img alt="VS start build success" src="../img/vsc-start-build.PNG" /></p>
+<p>After project is built successfully, right-click build.gradle again and now choose "Deploy Robot Code". This will deploy the built Java program (typically a .jar file) to robotRIO:</p>
+<p><img alt="VS start build success" src="../img/vsc-start-deploy.PNG" /></p>
+<h2 id="go-robot">Go Robot!</h2>
+<p>If all goes well by now, you should be able to drive the robot using your first robot program! The chapter right after the "Creating BenchTop Test Program" shows you how to do this:</p>
+<p><strong><a href="https://docs.wpilib.org/en/latest/docs/getting-started/running-a-benchtop/running-benchtop-test.html">Running your Benchtop Test Program</a></strong></p>
               
             </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../code-struct/" class="btn btn-neutral float-right" title="Robot Coding Basics">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../rio-setup/" class="btn btn-neutral" title="roboRIO Setup"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -165,6 +193,8 @@
       
         <span><a href="../rio-setup/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
+      
+        <span style="margin-left: 15px"><a href="../code-struct/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

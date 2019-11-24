@@ -5,7 +5,7 @@ To build:
 
 1. Clone this repo
 2. Go into /mkdocs folder
-3. Run `mkdocs build ../docs`
+3. Run `mkdocs build -d ../docs`
 4. Commit and push
 
 Site is at https://team7587.github.io/get-started.

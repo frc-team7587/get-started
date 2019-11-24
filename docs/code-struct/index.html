@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Basic Code Structure - Getting Started</title>
+  <title>Robot Coding Basics - Getting Started</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -17,7 +17,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Basic Code Structure";
+    var mkdocs_page_name = "Robot Coding Basics";
     var mkdocs_page_input_path = "code-struct.md";
     var mkdocs_page_url = null;
   </script>
@@ -58,27 +58,6 @@
     <a class="" href="../env-setup/">Environment Setup</a>
 	    </li>
           
-            <li class="toctree-l1 current">
-		
-    <a class="current" href="./">Basic Code Structure</a>
-    <ul class="subnav">
-            
-    <li class="toctree-l2"><a href="#basic-code-structure">Basic Code Structure</a></li>
-    
-        <ul>
-        
-            <li><a class="toctree-l3" href="#layout">Layout</a></li>
-        
-            <li><a class="toctree-l3" href="#command-based-programming">Command-based Programming</a></li>
-        
-            <li><a class="toctree-l3" href="#base-robot-class">Base Robot Class</a></li>
-        
-        </ul>
-    
-
-    </ul>
-	    </li>
-          
             <li class="toctree-l1">
 		
     <a class="" href="../rio-setup/">roboRIO Setup</a>
@@ -87,6 +66,26 @@
             <li class="toctree-l1">
 		
     <a class="" href="../robot1/">Your First Robot</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">Robot Coding Basics</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#basic-code-structure">Basic Code Structure</a></li>
+    
+
+    <li class="toctree-l2"><a href="#layout">Layout</a></li>
+    
+
+    <li class="toctree-l2"><a href="#command-based-programming">Command-based Programming</a></li>
+    
+
+    <li class="toctree-l2"><a href="#base-robot-class">Base Robot Class</a></li>
+    
+
+    </ul>
 	    </li>
           
         </ul>
@@ -111,7 +110,7 @@
     
       
     
-    <li>Basic Code Structure</li>
+    <li>Robot Coding Basics</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -121,17 +120,20 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="basic-code-structure">Basic Code Structure</h1>
+                <h2 id="basic-code-structure">Basic Code Structure</h2>
 <p>How does the Java code of a robot program look like? Read following few pages on WPI site and you'll get a better understanding.</p>
-<h3 id="layout">Layout</h3>
+<h2 id="layout">Layout</h2>
 <p>Read the explanation of the Java robot project code layout here:</p>
 <p><a href="https://wpilib.screenstepslive.com/s/currentCS/m/robotbuilder/l/292704-robotbuilder-created-code">https://wpilib.screenstepslive.com/s/currentCS/m/robotbuilder/l/292704-robotbuilder-created-code</a></p>
 <blockquote>
 <p><strong>Note:</strong> Never mind the <em>RobotBuilder</em> mentioned there, we're only interested in the code it generates.</p>
 </blockquote>
-<h3 id="command-based-programming">Command-based Programming</h3>
+<h2 id="command-based-programming">Command-based Programming</h2>
 <p>Visit the WPILib site chapter <a href="https://wpilib.screenstepslive.com/s/currentCS/m/java">FRC Java Programming</a>, expand the menu item "<em>Command based programming</em>" on the left to see sub-topics, read at least the first three topics. You'll need to understand two fundamental concepts: <strong>Subsystems</strong> and <strong>Commands</strong>.</p>
-<h3 id="base-robot-class">Base Robot Class</h3>
+<blockquote>
+<p><strong>Note:</strong> The corresponding section in the new <strong><a href="https://docs.wpilib.org/en/latest/">frc-doc</a></strong>  site is <strong><a href="https://docs.wpilib.org/en/latest/docs/software/commandbased/index.html">here</a></strong>. It is advised that we continue use the current site before the 2020 seasion officially starts (i.e. when the WPILib software installation package is updated with the new library).</p>
+</blockquote>
+<h2 id="base-robot-class">Base Robot Class</h2>
 <p>The base robot class determines the code structure and pattern used in your robot code. Read this article <a href="https://wpilib.screenstepslive.com/s/currentCS/m/java/l/599697-choosing-a-base-class">Choosing a Base Class</a> to understand base robot coding patterns. You'll see that the recommended base robot class is <strong>TimedRobot</strong>.</p>
 <blockquote>
 <p>Tip: Bookmark the <a href="https://first.wpi.edu/FRC/roborio/release/docs/java/">WPILib API</a>, you'll need it.</p>
@@ -143,10 +145,8 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../rio-setup/" class="btn btn-neutral float-right" title="roboRIO Setup">Next <span class="icon icon-circle-arrow-right"></span></a>
       
-      
-        <a href="../env-setup/" class="btn btn-neutral" title="Environment Setup"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../robot1/" class="btn btn-neutral" title="Your First Robot"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -172,10 +172,8 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../env-setup/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../robot1/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
-      
-        <span style="margin-left: 15px"><a href="../rio-setup/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
