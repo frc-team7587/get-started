@@ -2,7 +2,7 @@ site_name: Getting Started
 nav:
     - Knowledge Prep: index.md
     - Environment Setup: env-setup.md
-    - Basic Code Structure: code-struct.md
     - roboRIO Setup: rio-setup.md
     - Your First Robot: robot1.md
+    - Robot Coding Basics: code-struct.md
 theme: readthedocs

@@ -46,3 +46,14 @@ The software from National Instruments (NI) requires login for download, you'll 
 
 ## GitHub Account
 You may be able to go through this guide without it, but you'll need your GitHub account to work with your team mates developing the robot code. Just create one on [github.com](https://github.com) now if you still don't have it.
+
+## Team7587 on the Hub
+Our repositories on GitHub is here:
+
+[https://github.com/team7587](https://github.com/team7587)
+
+![Team7587 on GitHub](img/7587hub.PNG)
+
+Contact programming team lead or a mentor for adding you into any project repositories ("repos").
+
+
